@@ -19,19 +19,23 @@
 
 .indicatorLeft{
     margin-left: 20px;
+    
 }
 
 .indicatorRight{
     margin-right: 20px;
+    
 }
 
 .indicatorMid{
+    
 }
 
 .indicatorbox{
     display: flex;
     justify-content: space-between;
     align-content: center;
+    margin-top: -47px;
 }
 
 .meterfill{
