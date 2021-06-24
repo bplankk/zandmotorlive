@@ -16,6 +16,20 @@
     background-color: white;   
 }
 
+
+.indicatorLeft{
+    padding-left: 15px;
+    margin-top: 0px;    
+}
+
+.indicatorMid{
+
+}
+
+.indicatorRight{
+    padding-right: 15px;
+}
+
 .meterfill{
     width: 100%;
     max-width: 460px;
