@@ -18,16 +18,20 @@
 
 
 .indicatorLeft{
-    padding-left: 15px;
-    margin-top: 0px;    
-}
-
-.indicatorMid{
-
+    margin-left: 20px;
 }
 
 .indicatorRight{
-    padding-right: 15px;
+    margin-right: 20px;
+}
+
+.indicatorMid{
+}
+
+.indicatorbox{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .meterfill{
@@ -36,4 +40,9 @@
     height: 25px;
     margin: 10px;
     background-color: #f68872;
+}
+
+p {
+    font-family: "Bebas Neue";
+    font-size: 16px;
 }
