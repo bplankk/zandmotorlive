@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="item" id="windspeed">
+                <h1>Wind</h1>
+                <h2>[wind0avgwind-act=kn.0:--]</h2>
+                <p>Knots</p> 
+            </div>
+
+            <div class="item" id="gusts">
+                <h1>Gusts</h1>
+                <h2>[wind0wind-max5=kn.0:--]</h2>
+                <p>Knots</p>
+            </div>
+
+            <div class="item" id="direction">
+                <h1>Direction</h1>
+                <h2 id= "winddirection">--</h2>
+                <p>[wind0dir-act.0:--] Degrees</p>
+            </div>
+
+            <div class="item" id="windvane">
+                <img id= "vaneoverlay" src=./vaneoverlay.png>
+                <img id= "vanebg" src=./vanebg.png>
+            </div>
+
+            <script>
+                document.getElementById("vaneoverlay").style.transform = "rotate([wind0dir-act.0:--]deg)";
+
+                let angleWind = [wind0dir-act.0:--];
+
+                function calculateWindAngle() {                    
+                    if (23 >= angleWind && angleWind >= 0) {
+                        console.log("N");
+                        document.getElementById("winddirection").innerHTML = "N";
+                    } 
+                    else if (68 >= angleWind && angleWind >= 24) {
+                        console.log("NE");
+                        document.getElementById("winddirection").innerHTML = "NE";
+                    }
+                    else if (113 >= angleWind && angleWind >= 69) {
+                        console.log("E");
+                        document.getElementById("winddirection").innerHTML = "E";
+                    }
+                    else if (158 >= angleWind && angleWind >= 114) {
+                        console.log("SE");
+                        document.getElementById("winddirection").innerHTML = "SE";
+                    }
+                    else if (203 >= angleWind && angleWind >= 159) {
+                        console.log("S");
+                        document.getElementById("winddirection").innerHTML = "S";
+                    }
+                    else if (248 >= angleWind && angleWind >= 204) {
+                        console.log("SW");
+                        document.getElementById("winddirection").innerHTML = "SW";
+                    }
+                    else if (293 >= angleWind && angleWind >= 249) {
+                        console.log("W");
+                        document.getElementById("winddirection").innerHTML = "W";
+                    }
+                    else if (336 >= angleWind && angleWind >= 294) {
+                        console.log("NW");
+                        document.getElementById("winddirection").innerHTML = "NW";
+                    }
+                    else if (360 >= angleWind && angleWind >= 337) {
+                        console.log("N");
+                        document.getElementById("winddirection").innerHTML = "N";
+                    }
+                    else {
+                        console.log("--");
+                        document.getElementById("winddirection").innerHTML = "--";
+                    }
+                }
+
+                calculateWindAngle();
+
+            </script>
+
+        </div>
+
+    </body>
+

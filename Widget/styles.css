@@ -1,0 +1,50 @@
+h1 {
+    font-size: 24px;
+    font-family: "Bebas Neue";
+    margin:0px;
+    letter-spacing: 0.25px;
+}
+
+h2 {
+    font-family: "Lato";
+    font-size: 40px;
+    font-weight: 300;
+    color: #999999;
+    margin:0px;
+}
+
+p {
+    font-family: "Bebas Neue";
+    font-size: 16px;
+    color: #f68872;
+    margin:0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    margin: 5px;
+    padding:5px;
+    text-align: center;
+}
+
+#vaneoverlay {
+    z-index: 1;
+    position: absolute;
+}
+
+#vanebg {
+    z-index: 0;
+    position: center;
+}

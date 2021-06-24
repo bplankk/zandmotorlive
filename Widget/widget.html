@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="item" id="windspeed">
+                <h1>Windspeed</h1>
+                <h2>22</h2>
+                <p>Knots</p> 
+            </div>
+
+            <div class="item" id="gusts">
+                <h1>Gusts</h1>
+                <h2>22</h2>
+                <p>Knots</p>
+            </div>
+
+            <div class="item" id="direction">
+                <h1>Direction</h1>
+                <h2>SSW</h2>
+                <p>222 Degrees</p>
+            </div>
+
+            <div class="item" id="windvane">
+                <img id= "vaneoverlay" src=./vaneoverlay.png>
+                <img id= "vanebg" src=./vanebg.png>
+            </div>
+
+            <script>
+                document.getElementById("vaneoverlay").style.transform = "rotate([wind0dir-act.0:--]deg)";
+            </script>
+
+        </div>
+
+    </body>
+

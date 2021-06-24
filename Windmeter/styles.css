@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin: 0 20px;
+}
+
+.meterbox{
+    width: 480px;
+    height: 45px;
+    border: 1px;
+    margin: 5px;
+    border-color: black;
+    border-style: solid;
+    background-color: white;   
+}
+
+.meterfill{
+    width: 100%;
+    max-width: 460px;
+    height: 25px;
+    margin: 10px;
+    background-color: #f68872;
+}

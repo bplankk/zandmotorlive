@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <div class = "container">
+            <div class = "meterbox">
+                
+                    <div class = "meterfill" id = "meterfill" style="width: 0%">
+                        <!-- <img src = "./overlayknts_v2.png"> -->
+                    </div>
+                
+            </div>
+        </div>
+    <script>
+        let knotsInput = [wind0avgwind-act=kn.0:--];
+
+        function calculatePercentage() {
+            let knotsPercentage = (knotsInput / 40) * 100;
+            console.log(knotsPercentage);
+            document.getElementById("meterfill").style.width = `${knotsPercentage}%`;
+        }
+
+        calculatePercentage();
+    </script>
+    
+    </body>
+
+    
